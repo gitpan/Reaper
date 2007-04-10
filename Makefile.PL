@@ -2,10 +2,11 @@ use 5.006;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    'NAME'		=> 'reaper',
-    'VERSION_FROM'	=> 'reaper.pm', # finds $VERSION
+    'NAME'		=> 'Reaper',
+    'VERSION_FROM'	=> 'Reaper.pm',
 
-    'PM' => { 'reaper.pm' => '$(INST_LIBDIR)/reaper.pm' },
+    'PM' => { 'Reaper.pm' => '$(INST_LIBDIR)/Reaper.pm',
+	      'reaper.pm' => '$(INST_LIBDIR)/reaper.pm' },
 
 
     ABSTRACT => 'handler for reaping child process to prevent zombies',
